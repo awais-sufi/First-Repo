@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <style>
+        .ft {
+            background-color: rgb(45, 116, 186);
+        }
+
+        #booking {
+            padding: 50px 0px;
+        }
+
+        .s {
+            border: none;
+            background-color: rgb(236, 243, 249);
+            padding: 5px 5px;
+            color: rgb(45, 116, 186);
+            border-radius: 9px;
+            float: right;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-nav li a:hover {
+            color: rgb(45, 116, 186);
+        }
+
+        @media screen and (max-width:769px) {
+            .center {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+        @media  screen and (min-width: 765px) and (max-width: 1400px) {
+            .center{
+                margin-top: 80px;
+            }
+        }
+        .a{
+            font-size: 13px ;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="head logo/Logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="a collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav list-unstyled ms-auto gap-md-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="rapid2.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" href="rentals1.html">Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs1.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-auto">
+                    <a class="btn btn-primary mt-1 px-4" href=""> Book Now <img class="ms-2" src="Vector.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="booking" style="background-color: rgb(45,116,186);">
+        <div class="container">
+            <div class="py-5">
+                <h2 class="display-5 fw-semibold text-light text-center mt-5">Rentals</h2>
+                <p style="font-size: 13px;" class="text-center text-light">Home>Rentals</p>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h2 class="fw-semibold">Choose your Ride.</h2>
+                <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur. Velit amet quam tristique aliquet
+                    urna proin nam pellentesque risus.</p>
+            </div>
+            <div class="center col-md-6">
+                <input type="search" class="btn s rounded-2 ms-2" placeholder="Search Now" value="Search Now">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="a rounded-4 p-3" style="background-color: rgb(217, 230, 241);">
+                    <h4 class="text-center mt-3">Filter</h4>
+                    <p class="fw-bold" style="color:rgb(45,116,186);">Price Range</p>
+                    <div class="d-flex px-3">
+                        <p class="fw-bold" style="color:rgb(45,116,186);">$100</p>
+                        <label for="customRange" class="form-label"></label>
+                        <input type="range" class="form-range" id="customRange">
+                        <p class="fw-bold" style="color:rgb(45,116,186);">$3000</p>
+                    </div>
+                    <p class="fw-bold py-1" style="color:rgb(45,116,186);">Mileage</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Limited</label> <label for="form-check-label"
+                            class="float-end">(2)</label> <br>
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Unlimited</label> <label for="form-check-label"
+                            class="float-end">(4)</label>
+                    </div>
+                    <p class="fw-bold py-1" style="color:rgb(45,116,186);">Seating Capacity</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">2 Person</label> <label for="form-check-label"
+                            class="float-end">(2)</label> <br>
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">4 Person</label> <label for="form-check-label"
+                            class="float-end">(9)</label>
+                    </div>
+                    <p class="fw-bold py-1" style="color:rgb(45,116,186);">Engine Type</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Turbo</label> <label for="form-check-label"
+                            class="float-end">(6)</label> <br>
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Aspirated</label> <label for="form-check-label"
+                            class="float-end">(5)</label>
+                    </div>
+                    <p class="fw-bold py-1" style="color:rgb(45,116,186);">Transmission</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Automatic</label> <label for="form-check-label"
+                            class="float-end">(6)</label> <br>
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                        <label class="form-check-label">Manual</label> <label for="form-check-label"
+                            class="float-end">(5)</label>
+                    </div>
+                </div>
+                <div class="rounded-4 mt-3 mb-5 p-3" style="background-color: rgb(217, 230, 241);">
+                    <form action="/action_page.php">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="text" placeholder="Pick-up Location"
+                                name="text">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="pwd" placeholder="Pick-up Date"
+                                name="text">
+                        </div>
+                        <div class="form-check my-3">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                            <label class="form-check-label">Return to a diffrent address</label>
+                          </div>
+                    </form>
+                    <form action="/action_page.php">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="text" placeholder="Pick-up Location"
+                                name="text">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="pwd" placeholder="Pick-up Date"
+                                name="text">
+                        </div>
+                    </form>
+                    
+                    <div class="d-flex justify-content-center mt-4">
+                        <button type="button" class="btn btn-primary btn-block">Search Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row gap-3">
+                    <div class="col-lg-4 mx-auto rounded-4"
+                        style="height: 50%; width: 17rem; background-color: rgb(217, 230, 241); ">
+                        <div style="background-color: rgb(217, 230, 241);">
+                            <a href=""><img class="img-fluid" src="Cards/1.png" alt=""></a>
+                        </div>
+                        <div class="card-body" style="background-color: rgb(217, 230, 241);">
+                            <div class="d-flex">
+                                <h5 class="mb-0 ">Audi A6</h5>
+                            </div>
+                            <small class="text-body-secondary">Available</small>
+                            <div class="d-flex mt-1">
+                                <img class="mt-1" src="Cards/ic1.png" width="22px" height="22px" alt="">
+                                <p class="fs-5 m-0">4.8</p>
+                                <img class="ms-2 mt-2" src="Cards/ic2.png" width="19px" height="19px" alt="">
+                                <p class="fs-5 m-0 ms-1">4</p>
+                            </div>
+                            <small class="">Start Form</small>
+                            <div class="d-flex">
+                                <h5 class="text-dark mt-1">$69/Hours</h5>
+                                <a class="btn btn-primary float-end px-2 py-1 mb-4 ms-3" href=""> Book Now <img
+                                        class="ms-1" src="Cards/ic2.png" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto rounded-4"
+                        style="height: 50%; width: 17rem; background-color: rgb(217, 230, 241); ">
+                        <div style="background-color: rgb(217, 230, 241);">
+                            <a href=""><img class="img-fluid" src="Cards/1.png" alt=""></a>
+                        </div>
+                        <div class="card-body" style="background-color: rgb(217, 230, 241);">
+                            <div class="d-flex">
+                                <h5 class="mb-0 ">Audi A6</h5>
+                            </div>
+                            <small class="text-body-secondary">Available</small>
+                            <div class="d-flex mt-1">
+                                <img class="mt-1" src="Cards/ic1.png" width="22px" height="22px" alt="">
+                                <p class="fs-5 m-0">4.8</p>
+                                <img class="ms-2 mt-2" src="Cards/ic2.png" width="19px" height="19px" alt="">
+                                <p class="fs-5 m-0 ms-1">4</p>
+                            </div>
+                            <small class="">Start Form</small>
+                            <div class="d-flex">
+                                <h5 class="text-dark mt-1">$69/Hours</h5>
+                                <a class="btn btn-primary float-end px-2 py-1 mb-4 ms-3" href=""> Book Now <img
+                                        class="ms-1" src="Cards/ic2.png" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto rounded-4"
+                        style="height: 50%; width: 17rem; background-color: rgb(217, 230, 241); ">
+                        <div style="background-color: rgb(217, 230, 241);">
+                            <a href=""><img class="img-fluid" src="Cards/1.png" alt=""></a>
+                        </div>
+                        <div class="card-body" style="background-color: rgb(217, 230, 241);">
+                            <div class="d-flex">
+                                <h5 class="mb-0 ">Audi A6</h5>
+                            </div>
+                            <small class="text-body-secondary">Available</small>
+                            <div class="d-flex mt-1">
+                                <img class="mt-1" src="Cards/ic1.png" width="22px" height="22px" alt="">
+                                <p class="fs-5 m-0">4.8</p>
+                                <img class="ms-2 mt-2" src="Cards/ic2.png" width="19px" height="19px" alt="">
+                                <p class="fs-5 m-0 ms-1">4</p>
+                            </div>
+                            <small class="">Start Form</small>
+                            <div class="d-flex">
+                                <h5 class="text-dark mt-1">$69/Hours</h5>
+                                <a class="btn btn-primary float-end px-2 py-1 mb-4 ms-3" href=""> Book Now <img
+                                        class="ms-1" src="Cards/ic2.png" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto rounded-4"
+                        style="height: 50%; width: 17rem; background-color: rgb(217, 230, 241); ">
+                        <div style="background-color: rgb(217, 230, 241);">
+                            <a href=""><img class="img-fluid" src="Cards/1.png" alt=""></a>
+                        </div>
+                        <div class="card-body" style="background-color: rgb(217, 230, 241);">
+                            <div class="d-flex">
+                                <h5 class="mb-0 ">Audi A6</h5>
+                            </div>
+                            <small class="text-body-secondary">Available</small>
+                            <div class="d-flex mt-1">
+                                <img class="mt-1" src="Cards/ic1.png" width="22px" height="22px" alt="">
+                                <p class="fs-5 m-0">4.8</p>
+                                <img class="ms-2 mt-2" src="Cards/ic2.png" width="19px" height="19px" alt="">
+                                <p class="fs-5 m-0 ms-1">4</p>
+                            </div>
+                            <small class="">Start Form</small>
+                            <div class="d-flex">
+                                <h5 class="text-dark mt-1">$69/Hours</h5>
+                                <a class="btn btn-primary float-end px-2 py-1 mb-4 ms-3" href=""> Book Now <img
+                                        class="ms-1" src="Cards/ic2.png" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto rounded-4"
+                        style="height: 50%; width: 17rem; background-color: rgb(217, 230, 241); ">
+                        <div style="background-color: rgb(217, 230, 241);">
+                            <a href=""><img class="img-fluid" src="Cards/1.png" alt=""></a>
+                        </div>
+                        <div class="card-body" style="background-color: rgb(217, 230, 241);">
+                            <div class="d-flex">
+                                <h5 class="mb-0 ">Audi A6</h5>
+                            </div>
+                            <small class="text-body-secondary">Available</small>
+                            <div class="d-flex mt-1">
+                                <img class="mt-1" src="Cards/ic1.png" width="22px" height="22px" alt="">
+                                <p class="fs-5 m-0">4.8</p>
+                                <img class="ms-2 mt-2" src="Cards/ic2.png" width="19px" height="19px" alt="">
+                                <p class="fs-5 m-0 ms-1">4</p>
+                            </div>
+                            <small class="">Start Form</small>
+                            <div class="d-flex">
+                                <h5 class="text-dark mt-1">$69/Hours</h5>
+                                <a class="btn btn-primary float-end px-2 py-1 mb-4 ms-3" href=""> Book Now <img
+                                        class="ms-1" src="Cards/ic2.png" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto rounded-4"
+                        style="height: 50%; width: 17rem; background-color: rgb(217, 230, 241); ">
+                        <div style="background-color: rgb(217, 230, 241);">
+                            <a href=""><img class="img-fluid" src="Cards/1.png" alt=""></a>
+                        </div>
+                        <div class="card-body" style="background-color: rgb(217, 230, 241);">
+                            <div class="d-flex">
+                                <h5 class="mb-0 ">Audi A6</h5>
+                            </div>
+                            <small class="text-body-secondary">Available</small>
+                            <div class="d-flex mt-1">
+                                <img class="mt-1" src="Cards/ic1.png" width="22px" height="22px" alt="">
+                                <p class="fs-5 m-0">4.8</p>
+                                <img class="ms-2 mt-2" src="Cards/ic2.png" width="19px" height="19px" alt="">
+                                <p class="fs-5 m-0 ms-1">4</p>
+                            </div>
+                            <small class="">Start Form</small>
+                            <div class="d-flex">
+                                <h5 class="text-dark mt-1">$69/Hours</h5>
+                                <a class="btn btn-primary float-end px-2 py-1 mb-4 ms-3" href=""> Book Now <img
+                                        class="ms-1" src="Cards/ic2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination mt-5 justify-content-center gap-1 fw-bold rounded-5 mb-5">
+                    <li class="page-item"><a class="page-link" href=""><<</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="rentals2.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="rentals2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="rentals2.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="rentals2.html">>></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class=" ft">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mt-5">
+                    <img src="Footer/Vector (2).png" alt="">
+                    <img src="Footer/Frame 173.png" alt="">
+                    <p class="text-light mt-3">Lorem ipsum dolor sit amet consectetur. Tellus varius senectus quis
+                        tellus ipsum nunc dictum sed.
+                        Nunc nam neque aliquam quis purus.</p>
+                    <p class="text-light fw-semibold">Subscribe to our Newsletter</p>
+                    <input style="border: none;" class="fott rounded-2 py-1" type="email"
+                        placeholder="Your Email Address">
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-menu offset-md-2">
+                        <h5 class="text-light fw-semibold mt-5  mb-4">Quick Links</h5>
+                        <ul class="menu-list list-unstyled text-light">
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Home</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">About
+                                    us</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Blogs</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Contact
+                                    us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-menu">
+                        <h5 class="text-light fw-semibold mt-5 mb-4">Information</h5>
+                        <ul class="menu-list list-unstyled text-light">
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Rentals</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Booking
+                                    Form</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Booking
+                                    Detail</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href="">Brand</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-menu">
+                        <h5 class="text-light fw-semibold mt-5 mb-4">Contact Info</h5>
+                        <ul class="menu-list list-unstyled text-light">
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href=""><img
+                                        class="me-2" src="Footer/Vector (1).png" alt="">+923356620397</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href=""><img
+                                        class="me-2" src="Footer/uil-map-marker.png" alt="">Main Street, New
+                                    Jersy</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a class="footer-link text-reset" style="text-decoration: none;" href=""><img
+                                        class="me-2" src="Footer/uil-envelope.png" alt="">awais@javaidgmail.com</a>
+                            </li>
+
+                        </ul>
+                        <h5 class="text-light fw-semibold mt-4">Follow Us!</h5>
+                        <div class="social-links mt-2">
+                            <ul class="list-unstyled d-flex mt-3">
+                                <li class="me-2">
+                                    <a href=""><img src="Social Icons/Instagram.png" alt=""></a>
+                                </li>
+                                <li class="me-2">
+                                    <a href=""><img src="Social Icons/Twitter.png" alt=""></a>
+                                </li>
+                                <li class="me-2">
+                                    <a href=""><img src="Social Icons/Dribbble.png" alt=""></a>
+                                </li>
+                                <li class="me-2">
+                                    <a href=""><img src="Social Icons/Linkedin.png" alt=""></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer ft pt-4">
+        <div class="container">
+            <hr class="text-light m-0">
+            <p class="text-light text-center py-4">© 2024 All Rights Copyright Rapid Ride. Design & Developed By
+                UIPARADOX</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+#about{
+    padding: 50px 0px;
+}
+.fn{
+    font-size: 13px;
+}
+.top{
+    margin-top: 40px;
+}
+    .ft {
+        background-color: rgb(45, 116, 186);
+    }
+    li a:hover{
+        text-decoration: underline;
+    }
+    .navbar-nav li a:hover{
+        color: rgb(45, 116, 186);
+    }
